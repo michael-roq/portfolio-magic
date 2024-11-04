@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
 
 /*
 	Massively by HTML5 UP
@@ -188,6 +189,50 @@ input, select, textarea {
 		text-transform: uppercase;
 		margin: 0 0 1rem 0;
 	}
+
+	/* ------------------------------ */
+	/* ---- Michael's Edits Here ---- */
+	/* ------------------------------ */
+
+	#intro h2 {
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-weight: 500;
+		line-height: 1.5;
+		font-size: 35px;
+		letter-spacing: 0.035em !important;
+		text-transform: uppercase;
+		margin: 0 0 1rem 0;
+		margin-bottom: 40px;
+		margin-top: 20px;
+	}
+
+
+	@media screen and (max-width: 1680px) {
+		#intro h2 {
+		  font-size: 40px;
+		}
+	  }
+	  @media screen and (max-width: 1080px) {
+		#intro h2 {
+		  font-size: 30px;
+		}
+	  }
+
+	  @media screen and (max-width: 800px) {
+		#intro h2 {
+		  font-size: 20px;
+		}
+	  }
+
+	  @media screen and (max-width: 360px) {
+		#intro h2 {
+		  font-size: 20px;
+		}
+	  }
+
+	/* ------------------------------ */
+	/* -- Michael's Edits End Here -- */
+	/* ------------------------------ */
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			border-bottom: 0;
@@ -3395,6 +3440,8 @@ input, select, textarea {
 			text-align: center;
 		}
 
+
+
 		#intro + #header {
 			margin-top: -20rem;
 		}
@@ -3508,6 +3555,7 @@ input, select, textarea {
 		-webkit-justify-content: -webkit-flex-end;
 		-ms-justify-content: -ms-flex-end;
 		justify-content: flex-end;
+		align-items: start;
 		pointer-events: none;
 		-moz-user-select: none;
 		-webkit-user-select: none;
@@ -3555,29 +3603,92 @@ input, select, textarea {
 			border-bottom-color: #ffffff;
 		}
 
+		/* ------------------------------ */
+		/* ---- Michael's Edits Here ---- */
+		/* ------------------------------ */
+
+		#header {
+			/* - header-margin - */
+		/* margin-left: 2rem; */
+
+		margin: 0 auto;
+		width: 100%;
+		max-width: 72rem;
+		/* end edits */
+		}
+
 		#header .logo {
 			-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
 			-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
 			-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
 			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 			pointer-events: auto;
-			border-style: solid;
-			border-color: #ffffff;
-			border-width: 5px !important;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 2.25rem;
+			font-size: 3.5rem;
 			font-weight: 900;
 			letter-spacing: 0.075em;
 			line-height: 1;
-			padding: 1rem 1.75rem;
+			/* padding: 1rem 1.75rem; */
 			text-transform: uppercase;
 			visibility: visible;
+			border: none;
 		}
 
-			#header .logo:hover {
+		@media screen and (min-width: 1121px) {
+
+			header#header {
+				padding-left: 30px;
+				padding-bottom: 30px;
+			}
+
+			#header .logo {
+				margin-bottom: 50px;
+				font-size: 60px
+			}
+
+		}
+
+		@media screen and (max-width: 1120px) {
+
+			header#header {
+				padding-left: 30px;
+				padding-bottom: 30px;
+			}
+
+			#header .logo {
+				margin-bottom: 50px;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			header#header {
+				padding-left: 30px;
+				padding-bottom: 30px;
+			}
+
+			#header .logo {
+				margin-bottom: 0px;
+			}
+
+		}
+
+		@media screen and (max-width: 550px) {
+
+			#header {
+				margin: 0px;
+				align-items: center;
+				padding-left: 0px;
+			}
+
+		}
+
+			/* #header .logo:hover {
 				border-color: #18bfef !important;
 				color: #18bfef !important;
-			}
+			} */
+
 
 		@media screen and (max-width: 980px) {
 
@@ -3594,10 +3705,10 @@ input, select, textarea {
 				padding-bottom: 3rem;
 			}
 
-				#header .logo {
+				/* #header .logo {
 					font-size: 1.75rem;
 					border-width: 3px !important;
-				}
+				} */
 
 		}
 
@@ -3625,7 +3736,7 @@ input, select, textarea {
 		z-index: 2;
 	}
 
-		#nav ul.divided li {
+		.divided li {
 			border-top-color: #ffffff;
 		}
 
@@ -3675,6 +3786,7 @@ input, select, textarea {
 		#nav hr {
 			border-bottom-color: #ffffff;
 		}
+
 
 		#nav ul.links {
 			display: -moz-flex;
@@ -3743,13 +3855,8 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-		@media screen and (max-width: 980px) {
 
-			#nav {
-				display: none;
-			}
 
-		}
 
 /* Main */
 
@@ -3942,6 +4049,9 @@ input, select, textarea {
 			}
 
 		}
+
+
+
 
 /* Footer */
 
@@ -4534,9 +4644,9 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			#navPanelToggle {
+			/* #navPanelToggle {
 				display: block;
-			}
+			} */
 
 		}
 
@@ -4582,6 +4692,7 @@ input, select, textarea {
 
 			#navPanel .links li {
 				border-top: solid 2px #eeeeee;
+
 			}
 
 				#navPanel .links li a {
@@ -4593,6 +4704,7 @@ input, select, textarea {
 					font-weight: 900;
 					letter-spacing: 0.075em;
 					padding: 0.75rem 0;
+					margin-left: 20px !important;
 					text-transform: uppercase;
 				}
 
@@ -4685,3 +4797,308 @@ input, select, textarea {
 		}
 
 	}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ */
+/* ---- Michael's Edits Here ---- */
+/* ------------------------------ */
+
+
+		#intro p.intro-subtitle {
+			font-style: normal;
+			font-family: Source Sans Pro;
+			text-transform: none;
+			font-size: 40px;
+			font-style: normal;
+		}
+
+
+
+/* ------------------------------ */
+/* -- Michael's Edits End Here -- */
+/* ------------------------------ */
+
+
+
+
+
+/* ------------------------------ */
+/* ---- Michael's Edits Here ---- */
+/* ------------------------------ */
+
+#nav {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+	display: flex;
+	align-items: center;
+}
+
+#nav.links {
+	padding: 0px;
+}
+
+#nav .links #body-header-title {
+	/* margin-left: 40px; */
+	font-size: 30px;
+	font-weight: 600;
+	margin: 0px;
+	/* margin: 20px; */
+}
+
+/* ------------------------------ */
+/* -- Michael's Edits End Here -- */
+/* ------------------------------ */
+
+
+
+
+
+/* ------------------------------ */
+/* ---- Michael's Edits Here ---- */
+/* ------------------------------ */
+
+		div#main ul.name-wrapper {
+			/* padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 40px; */
+			display: flex;
+			align-items: center;
+		}
+
+		#main article.post {
+			padding-top: 10px;
+		}
+
+		div#main ul.name-wrapper {
+			margin: 0px;
+			padding: 0px;
+			padding-left: 40px;
+			display: none;
+		}
+
+		@media (max-width: 980px) {
+			div#main ul.name-wrapper {
+				display: flex;
+			}
+		}
+
+		@media (max-width: 550px) {
+			div#main ul.name-wrapper {
+				justify-content: center;
+			}
+		}
+
+		div#main ul.name-wrapper p#body-name-title {
+			/* margin-left: 40px; */
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			/* font-size: 0.8rem;
+			font-size: 30px;
+			font-weight: 600; */
+			text-transform: uppercase;
+			font-size: 30px;
+			font-weight: 600;
+			margin: 0px;
+			padding: 0px;
+			/* margin: 20px; */
+		}
+
+		.experience-parent {
+			display: flex;
+			flex-direction: column;
+		}
+		
+
+
+		@media (min-width: 981px) {
+			ul.name-wrapper {
+				padding: 0px;
+				margin: 0px;
+				display: none;
+			}
+		}
+
+
+/* ------------------------------ */
+/* -- Michael's Edits End Here -- */
+/* ------------------------------ */
+
+header.major {
+	display: flex;
+}
+
+header.major p.experience-parent {
+	border: 2px solid blue;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+header p.experience-parent .sub-title {
+	margin: 0px;
+	border: 1px solid green;
+	font-weight: 700;
+}
+
+header p.experience-parent .sub-sub-title {
+	margin: 0px;
+	margin-left: 10px;
+	border: 1px solid orange;
+}
+
+
+/* ----------------------------- */
+/* ----- Michael's Edits ------- */
+/* ----------------------------- */
+
+
+
+
+/* ------------------------------ */
+/* -- Michael's Edits End Here -- */
+/* ------------------------------ */
+
+
+
+
+/* ----------------------------- */
+/* ----- Michael's Edits ------- */
+/* ----------------------------- */
+
+
+/* -- Edits on the Header Content -- */
+
+@media screen and (max-width: 736px) {
+
+	#intro {
+		justify-content: center;
+	}
+
+}
+
+
+
+/* -- Edits on the About Title -- */
+
+
+
+		div #tablet-mobile-about-title {
+			display: block;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-size: 22px;
+			font-weight: 900;
+			display: none;
+			padding: 0px;
+			margin: 0px;
+			border: 1px solid green;
+
+		}
+
+		div #tablet-mobile-about-title p {
+			padding: 0px;
+			border: 1px solid orange;
+			margin: 0px;
+			margin-left: 40px;
+			/* letter-spacing: 0px; */
+			text-transform: uppercase;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#nav {
+				display: none;
+			}
+
+		}
+
+		@media screen and (min-width: 981px) {
+			div #tablet-mobile-about-title {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 980px) {
+
+			div #tablet-mobile-about-title {
+				display: block;
+			}
+
+		}
+
+		@media screen and (max-width: 550px) {
+
+			div #tablet-mobile-about-title p {
+				margin: 0px;
+				text-align: center;
+			}
+
+		}
+
+		/* -- Edits on the Projects Title -- */
+
+		div #tablet-mobile-projects-title {
+			display: block;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-size: 22px;
+			font-weight: 900;
+			display: none;
+			padding: 0px;
+			margin: 0px;
+			border: 1px solid green;
+
+		}
+
+		div #tablet-mobile-projects-title p {
+			padding: 0px;
+			border: 1px solid orange;
+			margin: 0px;
+			margin-left: 40px;
+			/* letter-spacing: 0px; */
+			text-transform: uppercase;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			/* #nav {
+				display: none;
+			} */
+
+		}
+
+		@media screen and (min-width: 981px) {
+			div #tablet-mobile-projects-title {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 980px) {
+
+			div #tablet-mobile-projects-title {
+				display: block;
+			}
+
+		}
+
+		@media screen and (max-width: 550px) {
+
+			div #tablet-mobile-projects-title p {
+				margin: 0px;
+				text-align: center;
+			}
+
+		}
+
+/* ----------------------------- */
+/* ----------------------------- */
+/* ----------------------------- */
+
