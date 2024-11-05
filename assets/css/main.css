@@ -5263,13 +5263,14 @@ div.tool {
 @media (max-width: 650px) {
 
 	div.tool-list {
-		justify-content: space-evenly;
-		gap: 20px;
+		grid-template-columns: repeat(3, auto); /* Three items per row */
+		gap: min(5vw, 60px); /* Flexible gap between 20px and 60px */
 	}
 
 	div.tool {
 		flex: 1 1 45%;
-		/* max-width: 130px; */
+		max-width: 130px;
+		width: 110px;
 	}
 
 }
@@ -5494,6 +5495,31 @@ div.tool-icon-12 {
 	padding-top: 50px !important;
 	border-top: 0px !important
 }
+
+
+/* -- Edits on the work section */
+
+div#wrapper div#main article.featured header {
+	gap: 0px;
+	height: auto;
+}
+
+div#wrapper div#main article.featured h2 {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid green;
+}
+
+div#wrapper div#main article.featured h3 {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid orange;
+}
+
+
+
+
+
 
 
 /* ----------------------------- */
