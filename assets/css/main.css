@@ -160,7 +160,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		/* border-bottom: dotted 1px; */
 		text-decoration: none;
 	}
 
@@ -3873,6 +3873,7 @@ input, select, textarea {
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
+			padding-top: 20px;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
@@ -4899,7 +4900,6 @@ header p.experience-parent .sub-sub-title {
 nav p span.header-title-span {
 	font-weight: 200;
 	margin-left: 100px;
-	border: 1px solid blue;
 }
 
 
@@ -5007,13 +5007,11 @@ nav p span.header-title-span {
 			display: none;
 			padding: 0px;
 			margin: 0px;
-			border: 1px solid green;
 
 		}
 
 		div #tablet-mobile-about-title p {
 			padding: 0px;
-			border: 1px solid orange;
 			margin: 0px;
 			margin-left: 40px;
 			/* letter-spacing: 0px; */
@@ -5061,13 +5059,11 @@ nav p span.header-title-span {
 			display: none;
 			padding: 0px;
 			margin: 0px;
-			border: 1px solid green;
 
 		}
 
 		div #tablet-mobile-projects-title p {
 			padding: 0px;
-			border: 1px solid orange;
 			margin: 0px;
 			margin-left: 40px;
 			/* letter-spacing: 0px; */
@@ -5110,25 +5106,394 @@ nav p span.header-title-span {
 
 /* -- Edits on the Tool Content -- */
 
+#wrapper #main div.content-section {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	margin: 0px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
 div.tools-section {
-	border: 3px solid blue;
+	gap: 20px;
+}
+
+#main div.tools-section div.sub-tool-title-2 {
+	margin-top: 20px;
+}
+
+div.tool-list-2 {
+	margin-bottom: 50px;
+}
+
+
+div.section-title {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 0px;
+	padding-top: 0px;
+	border: none;
+}
+
+div.tool-title {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 0px;
+	padding-top: 0px;
+}
+
+.tool-margin-wrapper {
+	margin: 0px;
+	margin-top: 0;
+	margin-bottom: 0px;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 0px;
+	padding-top: 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+div.sub-tool-title {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 20px;
+	margin: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	padding-top: 0px;
+}
+
+
+/* div.tool-list {
+	max-width: 960px;
+	border: 2px solid orange;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+} */
+
+div.tool-list {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(6, auto); /* Six items per row with auto width */
+    gap: 20px; /* Default gap */
+    justify-content: start; /* Aligns items to the left */
+}
+
+div.tool {
+	width: 130px;
+	height: 180px;
+	border: .5px solid #999;
 	display: flex;
 	flex-direction: column;
 }
 
-div.tool-list {
-	border: 2px solid orange;
+@media (max-width: 1100px) {
+
+	/* div.tool-list {
+		justify-content: space-evenly;
+		gap: 20px;
+	}
+
+	div.tool {
+		flex: 1 1 45%;
+		max-width: 130px;
+	} */
+
+	@media (max-width: 1100px) {
+		div.tool-list {
+			grid-template-columns: repeat(4, auto); /* Four items per row */
+			gap: 20px; /* Keep gap minimal */
+		}
+	}
+
+	@media (max-width: 915px) {
+		div.tool-list {
+			grid-template-columns: repeat(3, auto); /* Three items per row */
+			gap: min(5vw, 60px); /* Flexible gap between 20px and 60px */
+		}
+	}
+
+}
+
+@media (max-width: 915px) {
+
+	div.tool-list {
+		justify-content: space-evenly;
+		gap: 20px;
+	}
+
+	div.tool {
+		flex: 1 1 45%;
+		max-width: 130px;
+	}
+
+}
+
+@media (max-width: 915px) {
+
+	div.tool-list {
+		justify-content: space-evenly;
+		gap: 20px;
+	}
+
+	div.tool {
+		flex: 1 1 45%;
+		max-width: 130px;
+	}
+
+}
+
+@media (max-width: 650px) {
+
+	div.tool-list {
+		justify-content: space-evenly;
+		gap: 20px;
+	}
+
+	div.tool {
+		flex: 1 1 45%;
+		/* max-width: 130px; */
+	}
+
+}
+
+/* Two items per row below 550px */
+@media (max-width: 550px) {
+    div.tool-list {
+        grid-template-columns: repeat(2, auto); /* Two items per row */
+        gap: 20px;
+    }
+}
+
+/* One item per row below 340px */
+@media (max-width: 340px) {
+    div.tool-list {
+        grid-template-columns: 1fr; /* One item per row */
+        gap: 20px;
+		justify-content: center;
+    }
+}
+
+
+
+div.tool-top-section {
+	background-color: #18BFEF;
+	width: 100%;
+	height: 66.666%;
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
-div.tool {
-	width: 100px;
-	height: 100px;
-	border: 1px solid black;
+div.tool-bottom-section {
+	background-color: #f9f9f9;
+	width: 100%;
+	height: 33.333%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
+
+div.tool-icon {
+	width: 100%;
+	height: 100%;
+}
+
+div.tool-text {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+
+div.tool-icon-1 {
+	width: 72px;
+	height: 70px;
+	background-image: url('/icons/CSS-Icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-2 {
+	width: 64px;
+	height: 60px;
+	background-image: url('/icons/Javascript-icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-3 {
+	width: 72px;
+	height: 70px;
+	background-image: url('/icons/HTML-Icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-4 {
+	width: 72px;
+	height: 68px;
+	background-image: url('/icons/Boostrap-icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.svg-circle {
+
+	width: 68px;
+	height: 68px;
+	border: 3px solid white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-5 {
+	width: 40px;
+	height: 38px;
+	background-image: url('/icons/SVG-Animation-Icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-6 {
+	width: 62px;
+	height: 60px;
+	background-image: url('/icons/React\ Icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-7 {
+	width: 62px;
+	height: 60px;
+	background-image: url('/icons/Wordpress-Icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-8 {
+	width: 62px;
+	height: 60px;
+	background-image: url('/icons/Squarespace-Icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-9 {
+	width: 62px;
+	height: 60px;
+	background-image: url('/icons/Hubspot-icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-10 {
+	width: 62px;
+	height: 60px;
+	background-image: url('/icons/Bluehost-icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-11 {
+	width: 62px;
+	height: 60px;
+	background-image: url('/icons/Elementor-icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.tool-icon-12 {
+	width: 62px;
+	height: 60px;
+	background-image: url('/icons/Divi-icon.svg');
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wrapper #main div.work-section.content-section {
+	margin: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	margin-left: 60px;
+}
+
+@media (max-width: 736px) {
+
+	#wrapper #main div.work-section.content-section {
+		margin-left: 25px;
+}
+}
+
+#wrapper #main div.work-section.content-section .section-title {
+	margin: 0px;
+	margin-top: 50px;
+	padding: 0px;
+	line-height: 20px;
+
+}
+
+#wrapper #main article.post-1 {
+	padding-top: 50px !important;
+	border-top: 0px !important
+}
 
 
 /* ----------------------------- */
