@@ -5338,6 +5338,30 @@ div.tool {
 	}
 }
 
+@media (max-width: 400px) {
+	.tool-margin-wrapper {
+		margin: 0px;
+		margin-top: 0;
+		margin-bottom: 0px;
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 0px;
+		padding-top: 0px;
+	}
+}
+
+@media (max-width: 365px) {
+	.tool-margin-wrapper {
+		margin: 0px;
+		margin-top: 0;
+		margin-bottom: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 0px;
+		padding-top: 0px;
+	}
+}
+
 /* One item per row below 340px */
 @media (max-width: 340px) {
     div.tool-list {
@@ -5348,6 +5372,18 @@ div.tool {
     div.tool {
         width: auto; /* Allow width to be flexible within the grid */
     }
+}
+
+@media (max-width: 322px) {
+	.tool-margin-wrapper {
+		margin: 0px;
+		margin-top: 0;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 0px;
+		padding-top: 0px;
+	}
 }
 
 
@@ -5564,9 +5600,9 @@ div.tool-icon-12 {
 		margin-top: 20px;
 		margin-left: 0px;
 		padding: 0px;
-		padding-bottom: 20px;
-		font-size: 30px;
-		line-height: 30px;
+		padding-bottom: 30px;
+		font-size: 40px;
+		line-height: 40px;
 		text-align: center;
 	}
 }
@@ -5701,13 +5737,31 @@ div#wrapper div#main article .teachermike-h3-edit {
 }
 
 @media (max-width: 465px) {
+
+	div#wrapper div#main article {
+		margin-top: 0px;
+		padding-top: 0px;
+		padding-bottom: 40px;
+	}
+
+	div#wrapper div#main article.featured {
+		margin-top: 0px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+
 	div#wrapper div#main article h2 {
-		/* margin: 0px;
-		padding: 0px;
-		font-weight: 500; */
+		font-size: 22px;
+		padding-top: 10px;
+		margin-top: 20px;
+		/* border: 2px solid lime; */
 	}
 	
 	div#wrapper div#main article h2.featured-title {
+		font-size: 22px;
+		padding-top: 10px;
+		padding-bottom: 0px;
+		margin-top: 20px;
 		/* margin: 0px;
 		padding: 0px;
 		font-weight: 500;
@@ -5715,30 +5769,19 @@ div#wrapper div#main article .teachermike-h3-edit {
 	}
 	
 	div#wrapper div#main article h3 {
-		/* margin: 0px;
-		margin-top: -20px;
-		padding: 0px;
-		font-weight: 200;
-		font-size: 15px; */
+		
+		font-size: 14px;
+		/* padding-top: 10px;
+		margin-top: 20px; */
 	}
 	
 	div#wrapper div#main article h3.featured-sub-title {
-		/* margin: 0px;
-		margin-top: -20px;
-		padding: 0px;
-		font-weight: 200;
-		font-size: 15px;
-		padding-bottom: 20px; */
+		font-size: 14px;
+		/* padding-top: 10px;
+		margin-top: 20px; */
 	}
 	
 	
-	div#wrapper div#main article a.fit {
-		/* margin: 20px 0px;
-		margin-bottom: 40px;
-		padding: 0px;
-		border-top: .25px solid #ccc;
-		font-weight: 200; */
-	}
 }
 
 /* ------------------ */
@@ -5751,9 +5794,8 @@ div#wrapper div#main article a.image img {
 
 @media (max-width: 736px) and (min-width: 490px) {
 
-
+	
 	div#wrapper div#main article.post-article {
-		border: 3px solid red;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -5763,17 +5805,21 @@ div#wrapper div#main article a.image img {
 	div#wrapper div#main article.post-article a.image.fit {
 		display: block;
 		width: 100%;
-		border: 2px solid blue;
 		min-width: 100%;
 	}
 	
 	div#wrapper div#main article.post-article a.image.fit img {
 		width: 100%;
 		height: auto; /* This ensures the image maintains its aspect ratio */
-		border: 2px solid lime;
 	}
 }
 
+
+@media (max-width: 736px) {
+	div#wrapper div#main article.phetch-article {
+		margin-bottom: 30px;
+	}
+}
 
 
 /* - My Footer Edits Here - */
@@ -5794,50 +5840,42 @@ div#wrapper div#main article a.image img {
 	padding-left: 40px;
 }
 
-/* #wrapper #footer section.contact section.flex-footer section h3 {
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-} */
+@media (max-width: 570px) {
+	#wrapper #footer section.contact section.flex-footer {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+	}
 
+	#wrapper #footer section.contact section.flex-footer section {
+		text-align: center;
+		padding-left: 0px;
+	}
 
-/* div#wrapper div#main article.featured {
-	gap: 0px;
+	#wrapper #footer section.contact section.flex-footer section h3 {
+		margin-bottom: 0px;
+	}
+
+	#wrapper #footer section.contact section.flex-footer section h3.social-h3 {
+		margin-bottom: 5px;
+	}
+
+	#wrapper #footer section.contact section.flex-footer section.email-section {
+		text-align: center;
+		width: 100%;
+	}
+
+	#wrapper #footer section.contact section.flex-footer section.email-section p {
+		text-align: center;
+		width: 100%;
+	}
+
+	#wrapper #footer section.contact section.footer-signoff p {
+		text-align: center;
+		justify-content: center;
+	}
+
 }
-
-div#wrapper div#main article.featured header {
-	gap: 0px;
-	height: auto;
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
-}
-
-div#wrapper div#main article.featured h2 {
-	margin: 0px;
-	padding: 0px;
-	border: 1px solid green;
-	font-weight: 700;
-}
-
-div#wrapper div#main article.featured h3 {
-	margin: 0px;
-	margin-top: -20px;
-	padding: 0px;
-	border: 1px solid orange;
-	font-weight: 200;
-}
-
-div#wrapper div#main article.featured a.fit {
-	margin: 20px 0px;
-	margin-bottom: 40px;
-	padding: 0px;
-	border-top: .25px solid #ccc;
-	font-weight: 200;
-} */
-
-
-
-
-
 
 
 
