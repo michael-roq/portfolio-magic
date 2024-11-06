@@ -4932,17 +4932,12 @@ nav p span.header-title-span {
 
 		
 		div#main ul.name-wrapper p#body-name-title {
-			/* margin-left: 40px; */
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			/* font-size: 0.8rem;
-			font-size: 30px;
-			font-weight: 600; */
 			text-transform: uppercase;
 			font-size: 30px;
 			font-weight: 600;
 			margin: 0px;
 			padding: 0px;
-			/* margin: 20px; */
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
@@ -4979,6 +4974,22 @@ nav p span.header-title-span {
 			div#main ul.name-wrapper {
 				justify-content: center;
 				
+			}
+		}
+
+
+		@media (max-width: 465px) {
+			div#main ul.name-wrapper p#body-name-title {
+				font-size: 24px;
+				line-height: 50px;
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			div#main ul p span.header-title-span {
+				font-size: 14px;
+				margin-bottom: 20px;
+				margin-top: -10px;
 			}
 		}
 		
@@ -5295,12 +5306,47 @@ div.tool {
     }
 }
 
+@media (max-width: 465px) {
+
+	div.tool-title {
+		text-align: center;
+		font-size: 30px;
+		line-height: 30px;
+		margin: 0px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+		padding: 0px;
+		padding-top: 0px;
+	}
+
+	div.sub-tool-title {
+		text-align: center;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 16px;
+		margin: 0px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		padding: 0px;
+		padding-top: 0px;
+		margin-left: 0px;
+	}
+
+	div.tool-list div.tool div.tool-text {
+		line-height: 14px;
+		font-size: 14px;
+	}
+}
+
 /* One item per row below 340px */
 @media (max-width: 340px) {
     div.tool-list {
-        grid-template-columns: 1fr; /* One item per row */
-        gap: 20px;
-		justify-content: center;
+        grid-template-columns: repeat(2, 1fr); /* Two flexible columns */
+        gap: 10px; /* Adjust gap if needed */
+    }
+
+    div.tool {
+        width: auto; /* Allow width to be flexible within the grid */
     }
 }
 
@@ -5507,6 +5553,24 @@ div.tool-icon-12 {
 	line-height: 30px;
 }
 
+@media (max-width: 465px) {
+
+	#wrapper #main div.work-section.content-section {
+		margin: 0px;
+	}
+
+	#wrapper #main div.work-section.content-section .section-title {
+		margin: 0px;
+		margin-top: 20px;
+		margin-left: 0px;
+		padding: 0px;
+		padding-bottom: 20px;
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+	}
+}
+
 /* - This no longer has any text - */
 
 #wrapper #main div.work-section-2.content-section-2 {
@@ -5574,9 +5638,6 @@ div#wrapper div#main article h3.featured-sub-title {
 	padding-bottom: 20px;
 }
 
-/* img#anunclutteredspace-img {
-	border-bottom: 30px solid #B6A27C;
-} */
 
 div#wrapper div#main article a.fit {
 	margin: 20px 0px;
@@ -5637,6 +5698,47 @@ div#wrapper div#main article .teachermike-h3-edit {
 		min-height: none;
 	}
 
+}
+
+@media (max-width: 465px) {
+	div#wrapper div#main article h2 {
+		/* margin: 0px;
+		padding: 0px;
+		font-weight: 500; */
+	}
+	
+	div#wrapper div#main article h2.featured-title {
+		/* margin: 0px;
+		padding: 0px;
+		font-weight: 500;
+		padding-top: 20px; */
+	}
+	
+	div#wrapper div#main article h3 {
+		/* margin: 0px;
+		margin-top: -20px;
+		padding: 0px;
+		font-weight: 200;
+		font-size: 15px; */
+	}
+	
+	div#wrapper div#main article h3.featured-sub-title {
+		/* margin: 0px;
+		margin-top: -20px;
+		padding: 0px;
+		font-weight: 200;
+		font-size: 15px;
+		padding-bottom: 20px; */
+	}
+	
+	
+	div#wrapper div#main article a.fit {
+		/* margin: 20px 0px;
+		margin-bottom: 40px;
+		padding: 0px;
+		border-top: .25px solid #ccc;
+		font-weight: 200; */
+	}
 }
 
 /* ------------------ */
