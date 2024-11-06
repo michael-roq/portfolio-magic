@@ -5175,6 +5175,7 @@ div.sub-tool-title {
 	margin-top: 0px;
 	padding: 0px;
 	padding-top: 0px;
+	margin-left: 40px;
 }
 
 
@@ -5193,7 +5194,7 @@ div.tool-list {
     display: grid;
     grid-template-columns: repeat(6, auto); /* Six items per row with auto width */
     gap: 20px; /* Default gap */
-    justify-content: start; /* Aligns items to the left */
+    justify-content: center; /* Aligns items to the left */
 }
 
 div.tool {
@@ -5257,10 +5258,21 @@ div.tool {
 		flex: 1 1 45%;
 		max-width: 130px;
 	}
+}
 
+
+@media (max-width: 750px) {
+
+	div.sub-tool-title {
+		margin-left: 0px;
+	}
 }
 
 @media (max-width: 650px) {
+
+	div.sub-tool-title {
+		margin-left: 20px;
+	}
 
 	div.tool-list {
 		grid-template-columns: repeat(3, auto); /* Three items per row */
