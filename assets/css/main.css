@@ -5502,6 +5502,7 @@ div.tool-icon-12 {
 	margin: 0px;
 	margin-top: 50px;
 	padding: 0px;
+	padding-bottom: 20px;
 	font-size: 60px;
 	line-height: 30px;
 }
@@ -5549,6 +5550,13 @@ div#wrapper div#main article h2 {
 	font-weight: 500;
 }
 
+div#wrapper div#main article h2.featured-title {
+	margin: 0px;
+	padding: 0px;
+	font-weight: 500;
+	padding-top: 20px;
+}
+
 div#wrapper div#main article h3 {
 	margin: 0px;
 	margin-top: -20px;
@@ -5556,6 +5564,19 @@ div#wrapper div#main article h3 {
 	font-weight: 200;
 	font-size: 15px;
 }
+
+div#wrapper div#main article h3.featured-sub-title {
+	margin: 0px;
+	margin-top: -20px;
+	padding: 0px;
+	font-weight: 200;
+	font-size: 15px;
+	padding-bottom: 20px;
+}
+
+/* img#anunclutteredspace-img {
+	border-bottom: 30px solid #B6A27C;
+} */
 
 div#wrapper div#main article a.fit {
 	margin: 20px 0px;
@@ -5565,19 +5586,92 @@ div#wrapper div#main article a.fit {
 	font-weight: 200;
 }
 
-#wrapper .special-h3-edit {
+/* - For specialized he Edits for each section - */
+div#wrapper div#main article .canonical-h3-edit {
 	margin-top: -20px !important;
 }
 
+div#wrapper div#main article .onematch-h3-edit {
+	min-height: 50px;
+}
+div#wrapper div#main article .teachermike-h3-edit {
+	min-height: 50px;
+}
+
 @media (max-width: 980px) {
-	div#wrapper div#main article h3 {
+	div#wrapper div#main article h3.featured-sub-title {
 		margin: 0px;
 		margin-top: 10px;
+		margin-bottom: 20px;
 		padding: 0px;
 		font-weight: 200;
 		font-size: 15px;
 	}
+	div#wrapper div#main article h3 {
+		margin: 0px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		padding: 0px;
+		font-weight: 200;
+		font-size: 15px;
+	}
+
+	div#wrapper div#main article .special-h3-edit {
+		margin-top: -20px !important;
+		min-height: 150px;
+	}
 }
+
+@media (max-width: 736px) {
+	div#wrapper div#main article .teachermike-h3-edit {
+		min-height: 30px;
+	}
+	div#wrapper div#main article .onematch-h3-edit {
+		min-height: 30px;
+	}
+
+}
+
+@media (max-width: 559px) {
+	div#wrapper div#main article .teachermike-h3-edit {
+		min-height: none;
+	}
+
+}
+
+/* ------------------ */
+
+/* - Edits for the project image resizing on different screen sizes - */
+
+div#wrapper div#main article a.image img {
+
+}
+
+@media (max-width: 736px) and (min-width: 490px) {
+
+
+	div#wrapper div#main article.post-article {
+		border: 3px solid red;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+
+	div#wrapper div#main article.post-article a.image.fit {
+		display: block;
+		width: 100%;
+		border: 2px solid blue;
+		min-width: 100%;
+	}
+	
+	div#wrapper div#main article.post-article a.image.fit img {
+		width: 100%;
+		height: auto; /* This ensures the image maintains its aspect ratio */
+		border: 2px solid lime;
+	}
+}
+
 
 
 /* - My Footer Edits Here - */
@@ -5592,19 +5686,17 @@ div#wrapper div#main article a.fit {
 
 #wrapper #footer section.contact section.flex-footer section {
 	margin: 0px;
-	padding: 0px;
-	/* border: 1px solid blue; */
 	width: 50%;
 	height: 100%;
 	/* display: flex; */
 	padding-left: 40px;
 }
 
-#wrapper #footer section.contact section.flex-footer section h3 {
-	/* flex-direction: row;
+/* #wrapper #footer section.contact section.flex-footer section h3 {
+	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center; */
-}
+	align-items: center;
+} */
 
 
 /* div#wrapper div#main article.featured {
