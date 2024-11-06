@@ -156,10 +156,10 @@ input, select, textarea {
 	}
 
 	a {
-		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		-moz-transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out, border-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out;
+		-webkit-transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out, border-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out;
+		-ms-transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out, border-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out;
+		transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out, border-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out;
 		/* border-bottom: dotted 1px; */
 		text-decoration: none;
 	}
@@ -2115,10 +2115,10 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-moz-transition: background-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out, color 0.175s ease-in-out;
+		-webkit-transition: background-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out, color 0.175s ease-in-out;
+		-ms-transition: background-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out, color 0.175s ease-in-out;
+		transition: background-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out, color 0.175s ease-in-out;
 		border: 0;
 		border-radius: 0;
 		cursor: pointer;
@@ -2872,10 +2872,10 @@ input, select, textarea {
 			}
 
 		ul.icons.alt li .icon:before {
-			-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-			-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-			-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-			transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+			-moz-transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out, border-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out;
+			-webkit-transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out, border-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out;
+			-ms-transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out, border-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out;
+			transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out, border-color 0.175s ease-in-out, box-shadow 0.175s ease-in-out;
 			font-size: 1rem;
 		}
 
@@ -5144,8 +5144,8 @@ div.section-title {
 div.tool-title {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-weight: 500;
-	font-size: 40px;
-	line-height: 40px;
+	font-size: 30px;
+	line-height: 30px;
 	margin: 0px;
 	margin-top: 40px;
 	margin-bottom: 20px;
@@ -5473,7 +5473,10 @@ div.tool-icon-12 {
 	margin: 0px;
 	margin-top: 0px;
 	padding: 0px;
-	margin-left: 60px;
+	/* margin-left: 60px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media (max-width: 736px) {
@@ -5487,34 +5490,144 @@ div.tool-icon-12 {
 	margin: 0px;
 	margin-top: 50px;
 	padding: 0px;
-	line-height: 20px;
-
+	font-size: 60px;
+	line-height: 30px;
 }
 
+/* - This no longer has any text - */
+
+#wrapper #main div.work-section-2.content-section-2 {
+	margin: 0px;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+#wrapper #main div.work-section-2.content-section-2 .section-title-2 {
+	margin: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+
+
 #wrapper #main article.post-1 {
-	padding-top: 50px !important;
+	padding-top: 0px !important;
 	border-top: 0px !important
 }
 
 
 /* -- Edits on the work section */
 
+div#wrapper div#main article {
+	gap: 0px;
+	margin-top: 20px;
+}
+
+div#wrapper div#main article header {
+	gap: 0px;
+	height: auto;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+div#wrapper div#main article h2 {
+	margin: 0px;
+	padding: 0px;
+	font-weight: 500;
+}
+
+div#wrapper div#main article h3 {
+	margin: 0px;
+	margin-top: -20px;
+	padding: 0px;
+	font-weight: 200;
+	font-size: 15px;
+}
+
+div#wrapper div#main article a.fit {
+	margin: 20px 0px;
+	margin-bottom: 40px;
+	padding: 0px;
+	border-top: .25px solid #ccc;
+	font-weight: 200;
+}
+
+#wrapper .special-h3-edit {
+	margin-top: -20px !important;
+}
+
+@media (max-width: 980px) {
+	div#wrapper div#main article h3 {
+		margin: 0px;
+		margin-top: 10px;
+		padding: 0px;
+		font-weight: 200;
+		font-size: 15px;
+	}
+}
+
+
+/* - My Footer Edits Here - */
+
+#wrapper #footer section.contact section.flex-footer {
+	display: flex;
+	flex-direction: row;
+	/* border: 2px solid red; */
+	padding: 20px;
+}
+
+
+#wrapper #footer section.contact section.flex-footer section {
+	margin: 0px;
+	padding: 0px;
+	/* border: 1px solid blue; */
+	width: 50%;
+	height: 100%;
+	/* display: flex; */
+	padding-left: 40px;
+}
+
+#wrapper #footer section.contact section.flex-footer section h3 {
+	/* flex-direction: row;
+	justify-content: flex-start;
+	align-items: center; */
+}
+
+
+/* div#wrapper div#main article.featured {
+	gap: 0px;
+}
+
 div#wrapper div#main article.featured header {
 	gap: 0px;
 	height: auto;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 div#wrapper div#main article.featured h2 {
 	margin: 0px;
 	padding: 0px;
 	border: 1px solid green;
+	font-weight: 700;
 }
 
 div#wrapper div#main article.featured h3 {
 	margin: 0px;
+	margin-top: -20px;
 	padding: 0px;
 	border: 1px solid orange;
+	font-weight: 200;
 }
+
+div#wrapper div#main article.featured a.fit {
+	margin: 20px 0px;
+	margin-bottom: 40px;
+	padding: 0px;
+	border-top: .25px solid #ccc;
+	font-weight: 200;
+} */
+
 
 
 
