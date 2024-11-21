@@ -120,6 +120,94 @@
 	// Scrolly.
 		$('.scrolly').scrolly();
 
+	//
+	//
+	// MICHAEL'S EDITS START
+	//
+	//
+
+
+	// (function($) {
+	// 	var $window = $(window),
+	// 		$nav = $('#nav'),
+	// 		$main = $('#main'),
+	// 		$footer = $('#footer'),
+	// 		$button = $('.button.icon.scrolly'), // Target the down arrow button
+	// 		triggerPoint;
+	
+	// 	// Function to calculate the trigger point
+	// 	function calculateTriggerPoint() {
+	// 		triggerPoint = $button.offset().top + $button.outerHeight(); // Bottom of the button
+	// 	}
+	
+	// 	// Function to set visibility for larger screens
+	// 	function toggleVisibility(state) {
+	// 		if (state) {
+	// 			$nav.addClass('visible');
+	// 			$main.addClass('visible');
+	// 			$footer.addClass('visible');
+	// 		} else {
+	// 			$nav.removeClass('visible');
+	// 			$main.removeClass('visible');
+	// 			$footer.removeClass('visible');
+	// 		}
+	// 	}
+	
+	// 	// Check visibility based on scroll position
+	// 	function checkScroll() {
+	// 		if ($window.width() >= 737) { // Apply effect only for larger screens
+	// 			if ($window.scrollTop() >= triggerPoint) {
+	// 				toggleVisibility(true); // Show elements when past trigger point
+	// 			} else {
+	// 				toggleVisibility(false); // Hide elements when above trigger point
+	// 			}
+	// 		}
+	// 	}
+	
+	// 	// Handle button click
+	// 	$button.on('click', function(e) {
+	// 		if ($window.width() >= 737) {
+	// 			e.preventDefault(); // Prevent default anchor behavior
+	// 			calculateTriggerPoint(); // Recalculate the trigger point
+	// 			$('html, body').animate({ scrollTop: triggerPoint + 1 }, 500, function() {
+	// 				toggleVisibility(true); // Ensure content is visible after animation
+	// 			});
+	// 		}
+	// 	});
+	
+	// 	// Initialize visibility on page load
+	// 	$window.on('load', function() {
+	// 		calculateTriggerPoint(); // Calculate trigger point on load
+	// 		if ($window.width() >= 737) {
+	// 			toggleVisibility(false); // Start hidden on larger screens
+	// 		} else {
+	// 			toggleVisibility(true); // Always visible on smaller screens
+	// 		}
+	// 	});
+	
+	// 	// Update visibility on resize
+	// 	$window.on('resize', function() {
+	// 		calculateTriggerPoint(); // Recalculate trigger point on resize
+	// 		if ($window.width() >= 737) {
+	// 			checkScroll(); // Re-check scroll position
+	// 		} else {
+	// 			toggleVisibility(true); // Always visible on smaller screens
+	// 		}
+	// 	});
+	
+	// 	// Update visibility on scroll
+	// 	$window.on('scroll', function() {
+	// 		checkScroll(); // Check visibility on scroll
+	// 	});
+	// })(jQuery);
+
+	//
+	//
+	// MICHAEL'S EDITS END
+	//
+	//
+
+
 	// Background.
 		$wrapper._parallax(0.925);
 

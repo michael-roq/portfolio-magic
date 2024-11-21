@@ -148,6 +148,8 @@ input, select, textarea {
 		color: #212931;
 	}
 
+
+
 	body, input, select, textarea {
 		font-family: "Merriweather", Georgia, serif;
 		font-weight: 300;
@@ -189,50 +191,6 @@ input, select, textarea {
 		text-transform: uppercase;
 		margin: 0 0 1rem 0;
 	}
-
-	/* ------------------------------ */
-	/* ---- Michael's Edits Here ---- */
-	/* ------------------------------ */
-
-	#intro h2 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-weight: 500;
-		line-height: 1.5;
-		font-size: 35px;
-		letter-spacing: 0.035em !important;
-		text-transform: uppercase;
-		margin: 0 0 1rem 0;
-		margin-bottom: 40px;
-		margin-top: 20px;
-	}
-
-
-	@media screen and (max-width: 1680px) {
-		#intro h2 {
-		  font-size: 40px;
-		}
-	  }
-	  @media screen and (max-width: 1080px) {
-		#intro h2 {
-		  font-size: 30px;
-		}
-	  }
-
-	  @media screen and (max-width: 800px) {
-		#intro h2 {
-		  font-size: 20px;
-		}
-	  }
-
-	  @media screen and (max-width: 360px) {
-		#intro h2 {
-		  font-size: 20px;
-		}
-	  }
-
-	/* ------------------------------ */
-	/* -- Michael's Edits End Here -- */
-	/* ------------------------------ */
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			border-bottom: 0;
@@ -3603,117 +3561,7 @@ input, select, textarea {
 			border-bottom-color: #ffffff;
 		}
 
-		/* ------------------------------ */
-		/* ---- Michael's Edits Here ---- */
-		/* ------------------------------ */
-
-		#header {
-			/* - header-margin - */
-		/* margin-left: 2rem; */
-
-		margin: 0 auto;
-		width: 100%;
-		max-width: 72rem;
-		/* end edits */
-		}
-
-		#header .logo {
-			-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
-			-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
-			-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
-			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
-			pointer-events: auto;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 3.5rem;
-			font-weight: 900;
-			letter-spacing: 0.075em;
-			line-height: 1;
-			/* padding: 1rem 1.75rem; */
-			text-transform: uppercase;
-			visibility: visible;
-			border: none;
-			width: 100%;
-			padding-bottom: 50px;
-		}
-
-		@media screen and (min-width: 1121px) {
-
-			header#header {
-				padding-left: 30px;
-				padding-bottom: 30px;
-			}
-
-			#header .logo {
-				margin-bottom: 50px;
-				font-size: 60px
-			}
-
-		}
-
-		@media screen and (max-width: 1120px) {
-
-			header#header {
-				padding-left: 30px;
-				padding-bottom: 30px;
-			}
-
-			#header .logo {
-				margin-bottom: 50px;
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			header#header {
-				padding-left: 30px;
-				padding-bottom: 30px;
-			}
-
-			#header .logo {
-				margin-bottom: 0px;
-			}
-
-		}
-
-		@media screen and (max-width: 550px) {
-
-			#header {
-				margin: 0px;
-				align-items: center;
-				padding-left: 0px;
-			}
-
-		}
-
-			/* #header .logo:hover {
-				border-color: #18bfef !important;
-				color: #18bfef !important;
-			} */
-
-
-		@media screen and (max-width: 980px) {
-
-			#header {
-				height: 14rem;
-				padding-bottom: 4rem;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#header {
-				padding-bottom: 3rem;
-			}
-
-				/* #header .logo {
-					font-size: 1.75rem;
-					border-width: 3px !important;
-				} */
-
-		}
-
+		
 /* Nav */
 
 	#nav {
@@ -4815,9 +4663,51 @@ input, select, textarea {
 /* ---- Michael's Edits Here ---- */
 /* ------------------------------ */
 
+	
+/* - Makes the body disappear entirely from the screen until you hit the down arrow - */
+
+	
+/* - - */
 
 
 /* -- Edits on the Intro Content -- */
+	
+	
+#intro h2 {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 35px;
+	letter-spacing: 0.035em !important;
+	text-transform: uppercase;
+	margin: 0 0 1rem 0;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1680px) {
+	#intro h2 {
+	  font-size: 40px;
+	}
+  }
+  @media screen and (max-width: 1080px) {
+	#intro h2 {
+	  font-size: 30px;
+	}
+  }
+
+  @media screen and (max-width: 800px) {
+	#intro h2 {
+	  font-size: 20px;
+	}
+  }
+
+  @media screen and (max-width: 360px) {
+	#intro h2 {
+	  font-size: 20px;
+	}
+  }
 
 
 		#intro p.intro-subtitle {
@@ -4903,8 +4793,161 @@ nav p span.header-title-span {
 }
 
 
+/* --Edits on the header.logo "About Me" ---- */
 
-/* -- Edits on the name wrapper Content -- */
+
+		#header {
+			margin: 0 auto;
+			width: 100%;
+			max-width: 72rem;
+			opacity: 0;
+			}
+	
+	
+			#header .logo {
+				-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
+				-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
+				-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
+				transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+				pointer-events: auto;
+				font-family: "Source Sans Pro", Helvetica, sans-serif;
+				font-size: 3.5rem;
+				font-weight: 900;
+				letter-spacing: 0.075em;
+				line-height: 1;
+				/* padding: 1rem 1.75rem; */
+				text-transform: uppercase;
+				visibility: visible;
+				border: none;
+				width: 100%;
+				padding-bottom: 50px;
+			}
+	
+			@media screen and (min-width: 1121px) {
+	
+				header#header {
+					padding-left: 30px;
+					padding-bottom: 30px;
+				}
+	
+				#header .logo {
+					margin-bottom: 50px;
+					font-size: 60px
+				}
+	
+			}
+	
+			@media screen and (max-width: 1120px) {
+	
+				header#header {
+					padding-left: 30px;
+					padding-bottom: 30px;
+				}
+	
+				#header .logo {
+					margin-bottom: 50px;
+				}
+	
+			}
+	
+			@media screen and (max-width: 980px) {
+	
+				header#header {
+					padding-left: 30px;
+					padding-bottom: 30px;
+				}
+	
+				#header .logo {
+					margin-bottom: 0px;
+				}
+	
+			}
+	
+			@media screen and (max-width: 550px) {
+	
+				#header {
+					margin: 0px;
+					align-items: center;
+					padding-left: 0px;
+				}
+	
+			}
+	
+	
+	
+			@media screen and (max-width: 980px) {
+	
+				#header {
+					height: 14rem;
+					padding-bottom: 4rem;
+				}
+	
+			}
+	
+			@media screen and (max-width: 736px) {
+	
+				#header {
+					padding-bottom: 3rem;
+				}
+	
+			}
+	
+
+		/* -- Edits on the About Title -- */
+
+
+		div #tablet-mobile-about-title {
+			display: block;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-size: 22px;
+			font-weight: 900;
+			display: none;
+			padding: 0px;
+			margin: 0px;
+
+		}
+
+		div #tablet-mobile-about-title p {
+			padding: 0px;
+			margin: 0px;
+			margin-left: 40px;
+			/* letter-spacing: 0px; */
+			text-transform: uppercase;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#nav {
+				display: none;
+			}
+
+		}
+
+		@media screen and (min-width: 981px) {
+			div #tablet-mobile-about-title {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 980px) {
+
+			div #tablet-mobile-about-title {
+				display: block;
+			}
+
+		}
+
+		@media screen and (max-width: 550px) {
+
+			div #tablet-mobile-about-title p {
+				margin: 0px;
+				text-align: center;
+			}
+
+		}
+
+
+/* -- Edits on the name wrapper Content at the top of the body -- */
 
 		div#main ul.name-wrapper {
 			/* padding-top: 40px;
@@ -5005,61 +5048,6 @@ nav p span.header-title-span {
 
 
 
-
-
-/* -- Edits on the About Title -- */
-
-
-		div #tablet-mobile-about-title {
-			display: block;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 22px;
-			font-weight: 900;
-			display: none;
-			padding: 0px;
-			margin: 0px;
-
-		}
-
-		div #tablet-mobile-about-title p {
-			padding: 0px;
-			margin: 0px;
-			margin-left: 40px;
-			/* letter-spacing: 0px; */
-			text-transform: uppercase;
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#nav {
-				display: none;
-			}
-
-		}
-
-		@media screen and (min-width: 981px) {
-			div #tablet-mobile-about-title {
-				display: none;
-			}
-		}
-
-		@media screen and (max-width: 980px) {
-
-			div #tablet-mobile-about-title {
-				display: block;
-			}
-
-		}
-
-		@media screen and (max-width: 550px) {
-
-			div #tablet-mobile-about-title p {
-				margin: 0px;
-				text-align: center;
-			}
-
-		}
-
 		/* -- Edits on the Projects Title -- */
 
 		div #tablet-mobile-projects-title {
@@ -5150,16 +5138,25 @@ div.section-title {
 	padding: 0px;
 	padding-top: 0px;
 	border: none;
+	text-align: center;
+}
+
+@media (min-width: 1281px) {
+	body div.section-title {
+		padding-right: 40px;
+	}
 }
 
 div.tool-title {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-weight: 500;
-	font-size: 30px;
+	font-size: 60px;
 	line-height: 30px;
 	margin: 0px;
 	margin-top: 40px;
 	margin-bottom: 20px;
+	margin-top: 80px;
+	margin-bottom: 40px;
 	padding: 0px;
 	padding-top: 0px;
 }
@@ -5390,6 +5387,7 @@ div.tool {
 
 div.tool-top-section {
 	background-color: #18BFEF;
+	background-color: #D8C1AC;
 	width: 100%;
 	height: 66.666%;
 	display: flex;
@@ -5571,6 +5569,10 @@ div.tool-icon-12 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (max-width: 1280px) {
+
 }
 
 @media (max-width: 736px) {
@@ -5883,3 +5885,45 @@ div#wrapper div#main article a.image img {
 /* ----------------------------- */
 /* ----------------------------- */
 
+
+
+
+/* html body #intro {
+}
+
+html body #nav {
+	opacity: 0;
+}
+
+html body #main {
+	opacity: 0;
+}
+
+html body #footer {
+	opacity: 0;
+} */
+
+
+/* - Makes bottom sections (below the intro) disappear until you click the down arrow - */
+
+
+/* @media screen and (max-width: 736px) {
+    #nav, #main, #footer {
+        opacity: 1 !important;
+        pointer-events: all !important;
+    }
+}
+
+
+@media screen and (min-width: 737px) {
+    #nav, #main, #footer {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    #nav.visible, #main.visible, #footer.visible {
+        opacity: 1;
+        pointer-events: all;
+    }
+} */
