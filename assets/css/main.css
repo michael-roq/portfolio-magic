@@ -5927,3 +5927,42 @@ html body #footer {
         pointer-events: all;
     }
 } */
+
+
+.block .container .row .col-md-7 .div {
+	overflow: hidden;
+}
+
+.block .container .row .col-md-7 .div img {
+	transition: all 250ms ease-in-out;
+}
+
+.block .container .row .col-md-7 .div img:hover {
+	transform: scale3d(1.01, 1.01, 1.01);
+}
+
+/* ------- */
+
+/* followed by " div img " at the end */
+body .block .container .row .col-md-12 .row .col-md-7 div .row .col-md-12 > div {
+	overflow: hidden !important;
+	border: 2px solid lime !important;
+	position: relative !important;
+	width: 100%;
+	height: 100%;
+}
+
+.block .container .row .col-md-12 .row .col-md-7 > div img {
+	transition: all 250ms ease-in-out !important;
+	border: 2px solid orange !important;
+	width: 300px !important;
+	height: 200px !important;
+	background-image: url('https://s3.us-east-1.amazonaws.com/contents.newzenler.com/50053/library/lead-magnet676b193842541_lg.png') !important;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+.block .container .row .col-md-12 .row .col-md-7 > div img:hover {
+	transform: scale3d(1.01, 1.01, 1.01);
+}
